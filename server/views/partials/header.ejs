@@ -1,0 +1,41 @@
+<!-- File: header.ejs - Date - 11/14/2020
+ ---- Team Members ----​
+
+Fabio Santiago Luiz​ - 301077364​
+Thu Nhat Phan Vo​ - 301157562 ​
+Franz Cadiente - 301098663​
+Abdullah Syed​ - 301133737 ​
+Prabaldeep Kaur - 301103203 ​
+Zhen Wang​ - 301104020​
+
+---- Course Info ----​
+
+Course Name​ - Web Application Dev​ - COMP229.SEC006​
+Professor​ - Aderson Oliveira ​
+Project Type​ - Incidents Management​     
+  
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title><%= title %></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel='stylesheet' href='/content/app.css' />
+    <% if (title == 'Add Incident') { %>
+    <link rel="icon" href="../assets/images/logo.png">
+    <% } else if (title == 'Update Incident') { %>
+    <link rel="icon" href="../../assets/images/logo.png">
+    <% } else { %>
+    <link rel="icon" href="assets/images/logo.png">
+    <% } %>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="/jquery/dist/jquery.min.js"></script>
+    <script src="/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="/scripts/app.js"></script>
+  </head>
+  <body id="main">
